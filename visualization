@@ -1,0 +1,67 @@
+# Import necessary libraries
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Setting the aesthetics for seaborn
+sns.set(style="whitegrid")
+
+# Generating a synthetic dataset for satellite launches
+np.random.seed(0)
+
+# Simulating satellite launch data
+countries = ['USA', 'Russia', 'China', 'India', 'Japan', 'ESA', 'Israel']
+satellite_types = ['Communication', 'Weather', 'GPS', 'Earth Observation', 'Scientific', 'Navigation']
+
+# Randomly generating data
+n_samples = 150  # Number of satellite launches
+data = {
+    'Launch Date': pd.date_range('2000-01-01', periods=n_samples, freq='6M'),
+    'Country': np.random.choice(countries, size=n_samples),
+    'Satellite Type': np.random.choice(satellite_types, size=n_samples),
+    'Altitude (km)': np.random.uniform(300, 1500, n_samples),  # Altitude ranges from 300 to 1500 km
+    'Payload Weight (kg)': np.random.randint(500, 5000, n_samples)  # Payload weight ranges from 500 to 5000 kg
+}
+
+# Creating the DataFrame
+satellite_df = pd.DataFrame(data)
+
+# Displaying the first few rows of the dataset
+print("First few rows of the dataset:")
+print(satellite_df.head())
+
+# Checking for missing values and data types
+print("\nDataset Info:")
+satellite_df.info()
+
+# Displaying basic descriptive statistics for an overview
+print("\nDescriptive Statistics:")
+print(satellite_df.describe())
+
+# Setting up the figure layout for visualizations
+fig, axes = plt.subplots(2, 3, figsize=(18, 10))
+fig.suptitle("Exploratory Data Analysis: Satellite Launch Data")
+
+# Histograms for distributions of numeric data
+sns.histplot(satellite_df['Altitude (km)'], bins=15, kde=True, color="lightblue", ax=axes[0, 0])
+axes[0, 0].set_title("Distribution of Altitude (km)")
+
+sns.histplot(satellite_df['Payload Weight (kg)'], bins=15, kde=True, color="lightgreen", ax=axes[0, 1])
+axes[0, 1].set_title("Distribution of Payload Weight (kg)")
+
+# Scatter plots to explore relationships
+sns.scatterplot(x='Altitude (km)', y='Payload Weight (kg)', data=satellite_df, color="purple", ax=axes[1, 0])
+axes[1, 0].set_title("Altitude vs. Payload Weight")
+
+# Boxplot to see the distribution of Altitude based on Satellite Type
+sns.boxplot(x='Satellite Type', y='Altitude (km)', data=satellite_df, ax=axes[1, 1])
+axes[1, 1].set_title("Altitude Distribution by Satellite Type")
+
+# Correlation heatmap (although categorical data is present, we will focus on numerical relationships)
+corr = satellite_df[['Altitude (km)', 'Payload Weight (kg)']].corr()
+sns.heatmap(corr, annot=True, cmap="coolwarm", ax=axes[1, 2])
+axes[1, 2].set_title("Correlation Heatmap (Altitude vs. Payload Weight)")
+
+plt.tight_layout(rect=[0, 0, 1, 0.95])
+plt.show()
