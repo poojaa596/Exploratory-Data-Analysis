@@ -1,6 +1,12 @@
 # 📈 Stock Market Analysis and Prediction
-**Name**POOJA A
-**Company** CODTECH IT SOLUTIONS
+## 📄 Project Details
+- **Name:** POOJA A
+- **Company:** CODTECH IT SOLUTIONS
+- **ID:** CT12DS2550
+- **Domain:** “DATA ANALYTICS
+- **Duration:** SEPTEMBER 25th, 2024 to NOVEMBER 25th, 2024
+
+---
 
 ### 🚀 Overview
 This project performs a comprehensive **time series analysis and prediction** on historical stock market data, focusing on analyzing trends, identifying patterns, and forecasting future stock prices. Using machine learning and statistical modeling techniques, specifically the **ARIMA model**, this project aims to predict stock prices for the next 30 days based on historical data.
