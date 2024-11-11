@@ -45,4 +45,13 @@ To run the project:
 1. **Install Required Libraries**:
    ```bash
    pip install notebook pandas numpy matplotlib seaborn statsmodels scikit-learn yfinance
+   # Stock Market Analysis and Prediction
+
+## Overview
+This project performs analysis and prediction on historical stock data.
+
+<p align="center">
+  <img src=""C:\Users\ARUNACHALAM C\Downloads\s1.png"" alt="Stock Price Trend" width="600">
+</p>
+
 
