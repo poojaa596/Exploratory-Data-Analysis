@@ -49,9 +49,6 @@ To run the project:
 
 ## Overview
 This project performs analysis and prediction on historical stock data.
-
-<p align="center">
-  <img src=""C:\Users\ARUNACHALAM C\Downloads\s1.png"" alt="Stock Price Trend" width="600">
-</p>
+![s1](https://github.com/user-attachments/assets/2ac73f7f-465a-4f57-8d5d-baa4c8135cd1)
 
 
