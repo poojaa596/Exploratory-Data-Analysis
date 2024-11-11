@@ -1,4 +1,6 @@
 # 📈 Stock Market Analysis and Prediction
+**Name**POOJA A
+**Company** CODTECH IT SOLUTIONS
 
 ### 🚀 Overview
 This project performs a comprehensive **time series analysis and prediction** on historical stock market data, focusing on analyzing trends, identifying patterns, and forecasting future stock prices. Using machine learning and statistical modeling techniques, specifically the **ARIMA model**, this project aims to predict stock prices for the next 30 days based on historical data.
@@ -49,6 +51,8 @@ To run the project:
 
 ## Overview
 This project performs analysis and prediction on historical stock data.
+## Output
+The outputs are displayed below as follows
 ![s1](https://github.com/user-attachments/assets/2ac73f7f-465a-4f57-8d5d-baa4c8135cd1)
 ![s2](https://github.com/user-attachments/assets/f2782872-c65f-444e-9630-446e9f9a4e6e)
 ![s3](https://github.com/user-attachments/assets/af58b044-6035-428f-8db2-2dc05633ef4c)
