@@ -3,7 +3,7 @@
 - **Name:** POOJA A
 - **Company:** CODTECH IT SOLUTIONS
 - **ID:** CT12DS2550
-- **Domain:** “DATA ANALYTICS
+- **Domain:** DATA ANALYTICS
 - **Duration:** SEPTEMBER 25th, 2024 to NOVEMBER 25th, 2024
 
 ---
